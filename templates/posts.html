@@ -1,0 +1,10 @@
+{% extends "layouts/app.html" %}
+
+{% block content %}
+    <h2>{% block title %} {{ post['title'] }} {% endblock %}</h2>
+    <span class="badge badge-primary">{{ post['created'] }}</span>
+    <p>{{ post['content'] }}</p>
+    </a>
+<div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase" href="{{ url_for('edit', id=post['id']) }}">Edit Post</a></div>
+                </div>
+{% endblock %}

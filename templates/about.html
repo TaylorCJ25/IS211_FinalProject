@@ -1,0 +1,50 @@
+{% extends "layouts/app.html" %}
+
+{% block content %}
+
+<!-- Page Header-->
+        <header class="masthead" style="background-image: url('/static/assets/img/about-bg.jpg')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="page-heading">
+                            <h1>About The Project</h1>
+                            <span class="subheading">Required Deliverables</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content-->
+        <main class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <p>The purpose of this web application is to give a user the ability to run their own blog. A blog is just a
+series of posts made by an author. Each post has a title, a published date, an author, and textual
+(HTML) content. When first loading the application at the root URL, the user should be presented with a
+list of available posts listed in reverse chronological order (newest posts first). The application should
+allow a user to login via the ‘/login’ URL, which gives that user the ability to make changes to the blog.</p>
+                        <p>After logging in, the user should be sent to the ‘/dashboard’ page, which presents the user with an
+                            interface that:</p>
+
+                        <p> 1. Shows a list of their posts in a table. This list just shows the title of the post, with buttons
+labeled ‘Edit’ and ‘Delete’. This edit button will take the user to a page that allows them to
+                        update the post. The delete button will simply delete that post.</p>
+
+                        <p>2. Allows the user to add a new post (This can be done either directly on the dashboard page
+or on a new page).</p>
+                        <h2> Resources Used</h2>
+                        <p>
+                            1. https://www.digitalocean.com/community/tutorials/how-to-make-a-web-application-using-flask-in-python-3#step-6-displaying-a-single-post
+                        </p>
+                        <p> 2. https://codersdiaries.com/courses/build-a-blog-with-flask/lessons/17
+                        </p>
+                        <p>
+                            3. https://flask-sqlalchemy.palletsprojects.com/en/2.x/
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+{% endblock %}
